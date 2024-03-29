@@ -44,7 +44,7 @@
     "clean": "rimraf ./dist/",
     "prebuild": "pnpm clean",
     "build": "tsc --build tsconfig.cjs.json tsconfig.mjs.json --force",
-    "validate": "validate-package-exports --check --verify",
+    "validate": "validate-package-exports --check --verify --info",
     "postbuild": "echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json && echo '{\"type\":\"module\"}' > ./dist/mjs/package.json && pnpm validate",
     "typecheck": "tsc --build --verbose",
     "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ ./test/ --ext .ts,.mjs,.cjs",
@@ -61,7 +61,7 @@
     "@vitest/coverage-v8": "^1.4.0",
     "@webdeveric/eslint-config-ts": "^0.7.1",
     "@webdeveric/prettier-config": "^0.2.0",
-    "cspell": "^8.6.0",
+    "cspell": "^8.6.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -71,7 +71,7 @@
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.3",
-    "validate-package-exports": "^0.1.0",
+    "validate-package-exports": "0.2.0",
     "vitest": "^1.4.0"
   }
 }
