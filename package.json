@@ -57,7 +57,7 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.2",
     "@vitest/coverage-v8": "^1.4.0",
     "@webdeveric/eslint-config-ts": "^0.7.1",
     "@webdeveric/prettier-config": "^0.2.0",
@@ -71,7 +71,7 @@
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.3",
-    "validate-package-exports": "0.2.0",
+    "validate-package-exports": "^0.3.0",
     "vitest": "^1.4.0"
   }
 }
