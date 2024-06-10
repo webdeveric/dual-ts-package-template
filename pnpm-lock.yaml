@@ -18,8 +18,8 @@ importers:
         specifier: ^0.7.3
         version: 0.7.3(eslint@8.57.0)(typescript@5.4.5)
       '@webdeveric/prettier-config':
-        specifier: ^0.2.0
-        version: 0.2.0(prettier@3.3.1)
+        specifier: ^0.2.1
+        version: 0.2.1(prettier@3.3.1)
       cspell:
         specifier: ^8.8.4
         version: 8.8.4
@@ -764,8 +764,8 @@ packages:
     peerDependencies:
       eslint: '>= 4'
 
-  '@webdeveric/prettier-config@0.2.0':
-    resolution: {integrity: sha512-bcVZEXBts3cn73WWO17xiYpkpvw0+o3CbUViTirv7Pyp9Cju4tkmWBFmAP8K9aygdf0owlXVKH7aaVvErIHSZA==}
+  '@webdeveric/prettier-config@0.2.1':
+    resolution: {integrity: sha512-/Jvd7uqMyJiZj5ozrcLMUyFVrbGeMi6Lvea4eTEMdexTKr5W/xH+BQEkiuINBz5w/vXiHT62BevXFy1qEdJmFA==}
     peerDependencies:
       prettier: '>=2.4.0'
 
@@ -3262,7 +3262,7 @@ snapshots:
     dependencies:
       eslint: 8.57.0
 
-  '@webdeveric/prettier-config@0.2.0(prettier@3.3.1)':
+  '@webdeveric/prettier-config@0.2.1(prettier@3.3.1)':
     dependencies:
       prettier: 3.3.1
 
