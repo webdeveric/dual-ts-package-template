@@ -16,7 +16,7 @@
     "url": "https://github.com/webdeveric/dual-ts-package-template/issues"
   },
   "license": "MIT",
-  "packageManager": "pnpm@9.6.0+sha256.dae0f7e822c56b20979bb5965e3b73b8bdabb6b8b8ef121da6d857508599ca35",
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
   "sideEffects": false,
   "engines": {
     "node": ">=20.0.0"
@@ -57,21 +57,21 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "@types/node": "^20.14.15",
+    "@types/node": "^20.16.5",
     "@vitest/coverage-v8": "^2.0.5",
-    "@webdeveric/eslint-config-ts": "^0.9.0",
+    "@webdeveric/eslint-config-ts": "^0.11.0",
     "@webdeveric/prettier-config": "^0.3.0",
-    "cspell": "^8.13.2",
+    "cspell": "^8.14.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "husky": "^9.1.4",
-    "lint-staged": "^15.2.8",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4",
-    "validate-package-exports": "^0.6.0",
+    "validate-package-exports": "^0.6.1",
     "vitest": "^2.0.5"
   }
 }
