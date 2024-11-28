@@ -16,7 +16,7 @@
     "url": "https://github.com/webdeveric/dual-ts-package-template/issues"
   },
   "license": "MIT",
-  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
+  "packageManager": "pnpm@9.14.3+sha512.c0f53ee99477ed969b82b289ad011a5d16bf1623c957e7f29eabe8d0c00b574c29b8c7f54f6c67ee710c73f285c8154d07ce44b46fe2c0eeb476a90441bac371",
   "sideEffects": false,
   "engines": {
     "node": ">=20.0.0"
@@ -59,25 +59,25 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/types": "^19.5.0",
-    "@types/node": "^22.9.3",
-    "@vitest/coverage-v8": "^2.1.5",
+    "@types/node": "^22.10.1",
+    "@vitest/coverage-v8": "^2.1.6",
     "@webdeveric/eslint-config-ts": "^0.11.0",
     "@webdeveric/prettier-config": "^0.3.0",
-    "commitlint-plugin-cspell": "^0.1.1",
     "commitlint": "^19.6.0",
+    "commitlint-plugin-cspell": "^0.1.1",
     "conventional-changelog-conventionalcommits": "^8.0.0",
-    "cspell": "^8.16.0",
+    "cspell": "^8.16.1",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.31.0",
-    "eslint": "^8.57.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.0",
     "typescript": "^5.7.2",
-    "validate-package-exports": "^0.7.0",
-    "vitest": "^2.1.5"
+    "validate-package-exports": "^0.8.0",
+    "vitest": "^2.1.6"
   }
 }
