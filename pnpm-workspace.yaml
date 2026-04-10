@@ -11,4 +11,4 @@ engineStrict: true
 minimumReleaseAge: 2880 # 2 days
 
 minimumReleaseAgeExclude:
-  - commitlint-plugin-cspell@0.7.0
+  - commitlint-plugin-cspell@0.8.0
