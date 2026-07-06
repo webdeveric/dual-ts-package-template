@@ -46,9 +46,11 @@ jobs:
       - name: Installing dependencies
         run: pnpm install --frozen-lockfile
 
-      # https://github.com/pnpm/pnpm/issues/7909
-      # - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-      #   run: npm audit signatures
+      - name: Audit dependencies
+        run: pnpm audit --ignore-registry-errors --audit-level=moderate --prod
+
+      - name: Verify registry signatures for installed packages
+        run: pnpm audit signatures
 
       - name: Release
         env:
