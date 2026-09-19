@@ -54,7 +54,7 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rimraf ./dist/",
+    "clean": "rimraf ./cache/ ./dist/",
     "prebuild": "pnpm clean",
     "build": "tsc --build tsconfig.cjs.json tsconfig.mjs.json --force",
     "validate": "validate-package-exports --check --info",
