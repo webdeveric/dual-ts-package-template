@@ -60,7 +60,7 @@
     "validate": "validate-package-exports --check --info",
     "postbuild": "echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json && echo '{\"type\":\"module\"}' > ./dist/mjs/package.json && pnpm validate",
     "typecheck": "tsc --build --verbose",
-    "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ ./test/ --ext .ts,.mjs,.cjs",
+    "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ ./test/ --ext .ts,.mjs,.cjs --no-error-on-unmatched-pattern",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "spellcheck": "cspell './{.github,src,test}/**/*.{ts,json}' './*.{js,json,md,mjs,mts}' './package.json' --no-progress",
