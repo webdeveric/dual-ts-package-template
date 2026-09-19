@@ -9,6 +9,11 @@ engineStrict: true
 
 minimumReleaseAge: 2880 # 2 days
 
+minimumReleaseAgeExclude:
+  - validate-package-exports@1.4.5
+
+minimumReleaseAgeExcludePrune: true
+
 overrides:
   nanoid@<3.3.18: ^3.3.18
   postcss@<=8.5.22: ^8.5.23
