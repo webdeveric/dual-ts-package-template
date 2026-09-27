@@ -3,14 +3,14 @@ allowBuilds:
 
 autoInstallPeers: true
 
-enablePrePostScripts: false
+enablePrePostScripts: true
 
 engineStrict: true
 
 minimumReleaseAge: 2880 # 2 days
 
 minimumReleaseAgeExclude:
-  - validate-package-exports@1.4.5
+  - validate-package-exports@1.5.0
 
 minimumReleaseAgeExcludePrune: true
 

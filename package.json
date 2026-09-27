@@ -29,7 +29,7 @@
     "runtime": [
       {
         "name": "node",
-        "version": "^26.9.0",
+        "version": "^26.10.0",
         "onFail": "download"
       }
     ]
@@ -57,8 +57,8 @@
     "clean": "rimraf ./cache/ ./dist/",
     "prebuild": "pnpm clean",
     "build": "tsc --build tsconfig.cjs.json tsconfig.mjs.json --force",
-    "validate": "validate-package-exports --check --info",
-    "postbuild": "echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json && echo '{\"type\":\"module\"}' > ./dist/mjs/package.json && pnpm validate",
+    "validate": "validate-package-exports --check --info --strict-module-type",
+    "postbuild": "node postbuild.mjs && pnpm validate",
     "typecheck": "tsc --build --verbose",
     "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ ./test/ --ext .ts,.mjs,.cjs --no-error-on-unmatched-pattern",
     "test": "vitest",
@@ -70,28 +70,28 @@
   },
   "prettier": "@webdeveric/prettier-config",
   "devDependencies": {
-    "@commitlint/config-conventional": "^21.2.2",
-    "@commitlint/types": "^21.2.0",
-    "@types/node": "^22.20.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/types": "^21.2.3",
+    "@types/node": "^22.20.4",
     "@typescript/native": "npm:typescript@^7.0.2",
-    "@vitest/coverage-v8": "^5.0.1",
+    "@vitest/coverage-v8": "^5.0.2",
     "@webdeveric/eslint-config-ts": "^0.12.1",
     "@webdeveric/prettier-config": "^0.4.0",
-    "commitlint": "^21.2.2",
-    "commitlint-plugin-cspell": "^0.9.4",
+    "commitlint": "^21.2.3",
+    "commitlint-plugin-cspell": "^0.9.5",
     "conventional-changelog-conventionalcommits": "^9.3.1",
-    "cspell": "^10.3.3",
+    "cspell": "^10.3.4",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import": "^2.32.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.5.1",
-    "prettier": "^3.9.7",
+    "prettier": "^3.9.9",
     "rimraf": "^6.1.3",
     "semantic-release": "^25.0.9",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "validate-package-exports": "^1.4.5",
-    "vitest": "^5.0.1"
+    "validate-package-exports": "^1.5.0",
+    "vitest": "^5.0.2"
   }
 }
