@@ -57,7 +57,7 @@
     "clean": "rimraf ./cache/ ./dist/",
     "prebuild": "pnpm clean",
     "build": "tsc --build tsconfig.cjs.json tsconfig.mjs.json --force",
-    "validate": "validate-package-exports --check --info",
+    "validate": "validate-package-exports --check --info --strict-module-type",
     "postbuild": "echo '{\"type\":\"commonjs\"}' > ./dist/cjs/package.json && echo '{\"type\":\"module\"}' > ./dist/mjs/package.json && pnpm validate",
     "typecheck": "tsc --build --verbose",
     "lint": "eslint ./*.{js,cjs,mjs,ts,cts,mts} ./src/ ./test/ --ext .ts,.mjs,.cjs --no-error-on-unmatched-pattern",
