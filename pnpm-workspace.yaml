@@ -3,7 +3,7 @@ allowBuilds:
 
 autoInstallPeers: true
 
-enablePrePostScripts: false
+enablePrePostScripts: true
 
 engineStrict: true
 
