@@ -9,9 +9,6 @@ engineStrict: true
 
 minimumReleaseAge: 2880 # 2 days
 
-minimumReleaseAgeExclude:
-  - validate-package-exports@1.5.1
-
 minimumReleaseAgeExcludePrune: true
 
 overrides:
